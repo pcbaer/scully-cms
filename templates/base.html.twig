@@ -3,10 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <span>ScullyCMS is Free & Open Source Software. License: GPL 3.0+</span>
+                    </div>
+                </div>
+            </div>
+            <script src="{{ asset('js/jquery.slim.min.js') }}"></script>
+            <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+            <script src="{{ asset('js/app.js') }}"></script>
+            {% block javascripts %}{% endblock %}
+        </footer>
     </body>
 </html>

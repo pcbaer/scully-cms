@@ -1,8 +1,13 @@
 /.idea
 /public/bundles/
+/public/css/.sass-cache
 /var/
 /vendor/
 
+/public/css/*.css
+/public/css/*.css.map
+/public/js/bootstrap.*
+/public/js/jquery.*
 /.env.local
 /.env.local.php
 /.env.*.local

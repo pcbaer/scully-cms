@@ -1,4 +1,7 @@
 {
+    "components/jquery": {
+        "version": "3.3.1"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -76,6 +79,18 @@
     },
     "swiftmailer/swiftmailer": {
         "version": "v6.2.1"
+    },
+    "symfony/apache-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "c82bead70f9a4f656354a193df7bf0ca2114efa0"
+        },
+        "files": [
+            "public/.htaccess"
+        ]
     },
     "symfony/asset": {
         "version": "v4.3.5"
@@ -412,6 +427,9 @@
     },
     "symfony/yaml": {
         "version": "v4.3.5"
+    },
+    "twbs/bootstrap": {
+        "version": "v4.3.1"
     },
     "twig/twig": {
         "version": "v2.12.1"
