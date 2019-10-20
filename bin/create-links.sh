@@ -16,3 +16,7 @@ echo Creating jQuery links...
 rm -f public/js/jquery.*
 ln -s ../../vendor/components/jquery/jquery.slim.min.js public/js/jquery.slim.min.js
 ln -s ../../vendor/components/jquery/jquery.slim.min.map public/js/jquery.slim.min.map
+
+echo Creating TinyMCE links...
+rm -f public/js/tinymce
+ln -s ../../vendor/tinymce/tinymce public/js/tinymce

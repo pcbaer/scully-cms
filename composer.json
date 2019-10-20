@@ -50,7 +50,8 @@
         "symfony/yaml": "4.3.*",
 
         "components/jquery": "~3.3",
-        "twbs/bootstrap": "~4.3"
+        "twbs/bootstrap": "~4.3",
+        "tinymce/tinymce": "~5.1"
     },
     "require-dev": {
         "symfony/debug-pack": "*",

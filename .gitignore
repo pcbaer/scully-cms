@@ -1,6 +1,7 @@
 /.idea
 /public/bundles/
 /public/css/.sass-cache
+/public/js/tinymce
 /var/
 /vendor/
 

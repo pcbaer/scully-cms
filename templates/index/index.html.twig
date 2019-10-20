@@ -5,5 +5,18 @@
 {% endblock %}
 
 {% block body %}
-    Willkommen!
+    <h1>ScullyCMS</h1>
+
+    <form action="{{ path('save') }}">
+        <div class="row">
+            <div class="col-6">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" cols="80" rows="15">{{ content }}</textarea>
+                <button type="submit" class="btn btn-primary">Speichern</button>
+            </div>
+            <div class="col-6">
+                {{ content|raw }}
+            </div>
+        </div>
+    </form>
 {% endblock %}
