@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    ScullyCMS - Bearbeiten
+{% endblock %}
+
+{% block body %}
+    <h1>ScullyCMS</h1>
+
+    <form action="?action=update" method="post">
+        <div class="row">
+            <div class="col-6">
+                <label for="content">Content</label>
+                <textarea id="content" name="scms[content]" cols="80" rows="15">{{ content }}</textarea>
+                <button type="submit" name="scms[submit]" class="btn btn-primary" value="1">Speichern</button>
+                <a href="?action=show" class="btn btn-secondary">Anzeigen</a>
+            </div>
+            <div class="col-6">
+                <p>Vorschau: {{ path }}</p>
+                {{ content|raw }}
+            </div>
+        </div>
+    </form>
+{% endblock %}
+
+{% block footer %}
+    <span>ScullyCMS is Free & Open Source Software. License: GPL 3.0+</span>
+{% endblock %}

@@ -5,18 +5,9 @@
 {% endblock %}
 
 {% block body %}
-    <h1>ScullyCMS</h1>
+    {{ content|raw }}
+{% endblock %}
 
-    <form action="{{ path('save') }}">
-        <div class="row">
-            <div class="col-6">
-                <label for="content">Content</label>
-                <textarea id="content" name="content" cols="80" rows="15">{{ content }}</textarea>
-                <button type="submit" class="btn btn-primary">Speichern</button>
-            </div>
-            <div class="col-6">
-                {{ content|raw }}
-            </div>
-        </div>
-    </form>
+{% block footer %}
+    <span>ScullyCMS is Free & Open Source Software. License: GPL 3.0+ &middot; <a href="?action=edit">Bearbeiten</a></span>
 {% endblock %}

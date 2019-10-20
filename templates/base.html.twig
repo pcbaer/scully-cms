@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{% endblock %}</title>
         <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
         <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -15,7 +15,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <span>ScullyCMS is Free & Open Source Software. License: GPL 3.0+</span>
+                        {% block footer %}{% endblock %}
                     </div>
                 </div>
             </div>
